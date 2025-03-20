@@ -12,14 +12,22 @@ This repository provides a blank application setup with essential tools and fram
 ## Project Structure
 
 ```
+com.example.blank_app/
 ├── app/
-│   ├── data/               # Data sources (API, database, etc.)
 │   ├── di/                 # Koin dependency injection modules
+│   ├── model/              # Model classes
 │   ├── ui/                 # UI components built with Compose
-│   │   ├── viewmodel/      # ViewModel classes
+│   │   ├── viewModels/     # ViewModel classes
+│   │   ├── components/     # Reusable components
+│   │   ├── navigation/     # Navigation setup
+│   │   ├── screens/        # Main screens
+│   │   ├── states/         # State classes
+│   │   ├── theme/          # Theme configurations
 │   ├── network/            # Retrofit setup and API definitions
 │   ├── utils/              # Utility classes and extensions
 ├── build.gradle            # Gradle configuration
+├── AppApplication.kt       # Main application class
+├── MainActivity.kt         # Main activity of the app
 ```
 
 ## How to Use
